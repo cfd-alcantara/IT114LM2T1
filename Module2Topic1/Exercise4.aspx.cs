@@ -13,5 +13,16 @@ namespace Module1Exercise1
         {
 
         }
+
+        protected void SubmitButton_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                // All validations passed, concatenate and display inputted texts
+                result.Text = "<br />" + "Full Name: " + fullName.Text + "<br />" +
+                              "Age: " + age.Text + "<br />" +
+                              "Email: " + email.Text;
+            }
+        }
     }
 }

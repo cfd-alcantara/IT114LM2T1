@@ -13,5 +13,20 @@ namespace Module1Exercise1
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+            string str = "Now playing 'Blessed - Hillsong Worship'";
+            changed_text.InnerHtml = str.ToUpper();
+        }
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
